@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AuroraMassaggioSvedese Mondovì | Osteomassaggio, Massaggio Svedese e Riflessologia Plantare</title>
+  <meta name="description" content="AuroraMassaggioSvedese a Mondovì: osteomassaggio, massaggio svedese e riflessologia plantare. Prenota su WhatsApp." />
+  <meta name="keywords" content="massaggi Mondovì, osteomassaggio, massaggio svedese, riflessologia plantare, AuroraMassaggioSvedese" />
+  <meta property="og:title" content="AuroraMassaggioSvedese Mondovì — Trattamenti professionali per il tuo benessere" />
+  <meta property="og:description" content="Osteomassaggio, Massaggio Svedese, Riflessologia Plantare. Prenota la tua seduta." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #6f8f7a;
+      --primary-dark: #4f6b5a;
+      --primary-light: #e8f0eb;
+      --bg: #f8faf8;
+      --text: #2f3e34;
+      --white: #ffffff;
+      --gold: #c9a96a;
+      --gold-light: #f5eedd;
+      --shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+      --shadow-hover: 0 16px 40px rgba(0, 0, 0, 0.12);
+      --radius: 20px;
+      --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    /* HEADER / HERO */
+    header {
+      position: relative;
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(135deg, rgba(79,107,90,0.82), rgba(111,143,122,0.7)),
+        url('img/hero-bg.jpg') center/cover;
+      filter: brightness(0.95);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      color: white;
+      max-width: 850px;
+      padding: 40px 20px;
+      animation: fadeUp 1s ease;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-topline {
+      letter-spacing: 2px;
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+      opacity: 0.9;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .fade-text { animation: softFade 0.7s ease; }
+
+    @keyframes softFade {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 15px;
+      font-weight: 700;
+      text-shadow: 0 2px 20px rgba(0,0,0,0.2);
+    }
+
+    .hero-subtitle {
+      font-size: 1.15rem;
+      margin-bottom: 30px;
+      opacity: 0.95;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.8;
+    }
+
+    .hero-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 28px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: var(--transition);
+      box-shadow: var(--shadow);
+      cursor: pointer;
+    }
+
+    .btn-primary { background: var(--white); color: var(--primary-dark); }
+    .btn-primary:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); }
+    .btn-secondary { background: transparent; color: white; border: 2px solid rgba(255,255,255,0.8); }
+    .btn-secondary:hover { background: rgba(255,255,255,0.15); transform: translateY(-3px); }
+
+    /* LOGO */
+    .logo {
+      width: 45px;
+      height: 45px;
+      display: inline-block;
+      margin-right: 12px;
+      vertical-align: middle;
+    }
+
+    .nav-brand {
+      display: inline-flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    /* NAV */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background-color: rgba(79,107,90,0.97);
+      backdrop-filter: blur(12px);
+      text-align: center;
+      padding: 16px 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      color: white;
+      margin: 0 14px;
+      font-weight: 500;
+      font-size: 0.92rem;
+      letter-spacing: 0.3px;
+      transition: var(--transition);
+    }
+
+    nav a:hover { color: var(--gold); }
+
+    section { padding: 60px 20px; }
+    .container { max-width: 1200px; margin: auto; }
+
+    .section-title {
+      font-size: 2.5rem;
+      text-align: center;
+      color: var(--primary);
+      margin-bottom: 15px;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 40px;
+      color: #666;
+      font-size: 1.05rem;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 35px;
+      align-items: center;
+    }
+
+    .about-card, .image-card, .box, .contact-card, .review-card {
+      background: white;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .about-card { padding: 30px; }
+    .about-features { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; margin-top: 20px; }
+
+    .feature {
+      background: #e8f0eb;
+      color: var(--primary-dark);
+      padding: 12px 14px;
+      border-radius: 12px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .image-card { overflow: hidden; min-height: 360px; }
+    .image-card img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.95) contrast(1.05) saturate(0.95); }
+
+    .gallery img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 12px;
+      filter: brightness(0.9) contrast(1.1) saturate(0.9);
+      transition: 0.4s ease;
+    }
+
+    .gallery img:hover { filter: brightness(1) contrast(1.1) saturate(1); transform: scale(1.02); }
+
+    .servizi { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 22px; }
+
+    .box {
+      padding: 24px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      border: 1px solid rgba(111,143,122,0.15);
+    }
+
+    .box:hover { transform: translateY(-6px); box-shadow: 0 16px 28px rgba(0,0,0,0.12); }
+    .box h3 { margin-top: 0; color: var(--primary); margin-bottom: 10px; }
+
+    .service-btn {
+      display: inline-block;
+      margin-top: 12px;
+      background: var(--primary);
+      color: white;
+      padding: 11px 18px;
+      border-radius: 999px;
+      font-weight: bold;
+      font-size: 0.95rem;
+      transition: 0.3s ease;
+      box-shadow: 0 6px 16px rgba(79,107,90,0.18);
+    }
+
+    .box p::before { content: "🌿 "; }
+    .promo p::before { content: ""; }
+
+    .btn:hover, .service-btn:hover { transform: translateY(-2px); opacity: 0.9; }
+
+    .promo {
+      grid-column: span 2;
+      background: linear-gradient(135deg, #6f8f7a, #8fae98);
+      color: white;
+      transform: scale(1.02);
+      border: 2px solid var(--gold);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .promo::before {
+      content: "";
+      position: absolute;
+      top: -50px;
+      right: -50px;
+      width: 140px;
+      height: 140px;
+      background: rgba(255,255,255,0.12);
+      border-radius: 50%;
+    }
+
+    .promo h3, .promo p { color: white; position: relative; z-index: 1; }
+    .promo strong { font-size: 1.2rem; }
+
+    .badge {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: var(--gold);
+      color: black;
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 999px;
+      z-index: 2;
+    }
+
+    .promo .service-btn { background: white; color: var(--primary-dark); position: relative; z-index: 1; }
+
+    .reviews {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+    }
+
+    .review-card {
+      padding: 26px;
+      position: relative;
+      border-left: 4px solid var(--gold);
+      transition: 0.3s ease;
+    }
+
+    .review-card::before {
+      content: "\"";
+      position: absolute;
+      top: -8px;
+      right: 18px;
+      font-size: 70px;
+      color: rgba(111,143,122,0.12);
+      font-family: Georgia, serif;
+      line-height: 1;
+    }
+
+    .review-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 28px rgba(0,0,0,0.12);
+    }
+
+    .stars {
+      color: var(--gold);
+      font-size: 1.15rem;
+      margin-bottom: 12px;
+      letter-spacing: 2px;
+    }
+
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; align-items: stretch; }
+    .contact-card { padding: 30px; }
+    .contact-card p { margin: 10px 0; }
+    .contact-card .btn { margin-top: 12px; background: var(--primary); color: white; }
+
+    .info-box {
+      background: linear-gradient(135deg, #eef4f0, #ffffff);
+      border-radius: var(--radius);
+      padding: 30px;
+      box-shadow: var(--shadow);
+    }
+
+    footer { background-color: var(--primary); color: white; text-align: center; padding: 22px; margin-top: 20px; }
+
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #25D366;
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+      animation: pulse 2s infinite;
+      z-index: 100;
+    }
+
+    .whatsapp-btn img { width: 35px; height: 35px; }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.7); }
+      70% { box-shadow: 0 0 0 16px rgba(37,211,102,0); }
+      100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+    }
+
+    @media (max-width: 900px) {
+      .about, .contact-grid { grid-template-columns: 1fr; }
+      .promo { grid-column: span 1; }
+      header h1 { font-size: 2.3rem; }
+    }
+
+    @media (max-width: 600px) {
+      nav a { display: inline-block; margin: 6px 8px; font-size: 0.93rem; }
+      .hero-buttons { flex-direction: column; align-items: center; }
+      .about-features { grid-template-columns: 1fr; }
+      section { padding: 55px 16px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- HERO -->
+  <header>
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-topline"><span id="heroText">Dolori, stress e tensioni? Qui inizi il tuo percorso di benessere</span></p>
+      <h1>AuroraMassaggioSvedese</h1>
+      <p class="hero-subtitle"><strong>Trattamenti professionali per il benessere di corpo e mente.</strong><br>Ritrova equilibrio, sciogli le tensioni e riscopri energia attraverso percorsi personalizzati a Mondovì.</p>
+      <div class="hero-buttons">
+        <a class="btn btn-primary" href="#servizi">Scopri i trattamenti</a>
+        <a class="btn btn-secondary" href="https://wa.me/393349762880?text=Buongiorno,%20vorrei%20prenotare%20un%20massaggio" target="_blank">Prenota la tua seduta</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-brand">
+      <img src="img/aurora-logo.png" alt="Aurora Massaggio Svedese" class="logo" />
+    </div>
+    <a href="#chi-siamo">Chi sono</a>
+    <a href="#servizi">Servizi</a>
+    <a href="#galleria">Galleria</a>
+    <a href="#recensioni">Recensioni</a>
+    <a href="#contatti">Contatti</a>
+  </nav>
+
+  <!-- CHI SONO -->
+  <section id="chi-siamo">
+    <div class="container about">
+      <div class="about-card fade-in">
+        <h2 class="section-title" style="text-align:left; margin-top:0;">Il mio spazio di benessere a Mondovì</h2>
+        <p>Ho creato il mio studio per offrire trattamenti realmente efficaci, pensati su misura per ogni persona. Qui non troverai massaggi standard, ma un ascolto attento e un approccio professionale che mette al centro le tue esigenze.</p>
+        <p>Empatia, competenza e cura dei dettagli mi permettono di creare un'esperienza unica: un ambiente riservato dove puoi lasciarti andare, sciogliere tensioni profonde e ritrovare benessere fin dalla prima seduta nel mio studio a Mondovì.</p>
+        <p>Ogni mio trattamento è studiato per darti risultati concreti: meno dolore, più leggerezza, più energia nella vita di tutti i giorni.</p>
+        <div class="about-features">
+          <div class="feature">I miei trattamenti personalizzati</div>
+          <div class="feature">Ambiente rilassante</div>
+          <div class="feature">Approccio professionale</div>
+          <div class="feature">Prenotazione veloce</div>
+        </div>
+      </div>
+      <div class="image-card fade-in">
+        <img src="img/aurora-profile.jpg" alt="Aurora - Massaggiatrice a Mondovì" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FORMAZIONE E CERTIFICAZIONI -->
+  <section id="formazione" style="background: linear-gradient(135deg, #e8f0eb, #f5eedd);">
+    <div class="container">
+      <h2 class="section-title fade-in">La mia Formazione e Certificazioni</h2>
+      <p class="section-subtitle fade-in">Sono una professionista certificata con formazione continua presso le migliori scuole di massaggio. Garantisco competenza e professionalità nei miei trattamenti a Mondovì.</p>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 40px;">
+        <div style="text-align: center; padding: 25px; background: white; border-radius: 15px; box-shadow: 0 8px 30px rgba(0,0,0,0.08);">
+          <div style="width: 80px; height: 80px; margin: 0 auto 15px; background: #2f3e34; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 40px;">☯️</div>
+          <h3 style="color: #4f6b5a; margin-bottom: 8px;">Riflessologia Plantare</h3>
+          <p style="color: #666; font-size: 0.95rem;">Certificazione 1° livello presso <strong>Marcella Lusso</strong></p>
+        </div>
+        
+        <div style="text-align: center; padding: 25px; background: white; border-radius: 15px; box-shadow: 0 8px 30px rgba(0,0,0,0.08);">
+          <div style="width: 80px; height: 80px; margin: 0 auto 15px; background: linear-gradient(135deg, #6f8f7a, #8fae98); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 40px; color: white;">🌿</div>
+          <h3 style="color: #4f6b5a; margin-bottom: 8px;">Osteomassaggio</h3>
+          <p style="color: #666; font-size: 0.95rem;">Formazione specializzata presso <strong>Elitropia</strong></p>
+        </div>
+        
+        <div style="text-align: center; padding: 25px; background: white; border-radius: 15px; box-shadow: 0 8px 30px rgba(0,0,0,0.08);">
+          <div style="width: 80px; height: 80px; margin: 0 auto 15px; background: #c9a96a; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 40px;">✋</div>
+          <h3 style="color: #4f6b5a; margin-bottom: 8px;">Massaggio Svedese</h3>
+          <p style="color: #666; font-size: 0.95rem;">Certificazione presso la scuola <strong>TAI</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- SERVIZI -->
+  <section id="servizi">
+    <div class="container">
+      <h2 class="section-title fade-in">I miei trattamenti a Mondovì</h2>
+      <p class="section-subtitle fade-in">Trattamenti selezionati per rilassare il corpo, sciogliere le tensioni e favorire il benessere generale. Tutti i miei servizi sono disponibili nel mio studio a Mondovì.</p>
+      <div class="servizi">
+        <div class="box fade-in">
+          <h3>Osteomassaggio / Miofasciale</h3>
+          <p>Trattamento mirato per migliorare mobilità, postura e benessere muscolare. Ideale per chi soffre di rigidità e tensioni croniche.</p>
+          <a class="service-btn" href="https://wa.me/393349762880?text=Buongiorno,%20soffro%20di%20tensioni%20e%20vorrei%20capire%20se%20l%E2%80%99osteomassaggio%20pu%C3%B2%20aiutarmi" target="_blank">Prenota ora</a>
+        </div>
+
+        <div class="box fade-in">
+          <h3>Massaggio Svedese</h3>
+          <p>Aiuta la circolazione, alleggerisce i muscoli e dona una piacevole sensazione di vitalità e leggerezza.</p>
+          <a class="service-btn" href="https://wa.me/393349762880?text=Buongiorno,%20vorrei%20migliorare%20la%20circolazione%20e%20sentirmi%20pi%C3%B9%20leggero/a.%20Mi%20dai%20info%20sul%20massaggio%20svedese%3F" target="_blank">Prenota ora</a>
+        </div>
+
+        <div class="box fade-in">
+          <h3>Riflessologia Plantare</h3>
+          <p>Stimola i punti riflessi dei piedi per favorire il benessere generale del corpo e della mente.</p>
+          <a class="service-btn" href="https://wa.me/393349762880?text=Buongiorno,%20mi%20interessa%20la%20riflessologia%20plantare.%20Potete%20darmi%20pi%C3%B9%20informazioni%3F" target="_blank">Prenota ora</a>
+        </div>
+
+        <div class="box promo">
+          <div class="badge">OFFERTA</div>
+          <h3>🎁 Pacchetto Osteomassaggio</h3>
+          <p><strong>3 sedute + 1 GRATIS</strong></p>
+          <p>Ideale per sciogliere tensioni profonde e ottenere benefici duraturi nel tempo.</p>
+          <p><strong>Promo valida su prenotazione.</strong></p>
+          <a class="service-btn" href="https://wa.me/393349762880?text=Buongiorno,%20mi%20interessa%20il%20pacchetto%20osteomassaggio%203%2B1%20gratis.%20Mi%20puoi%20spiegare%20come%20funziona%3F" target="_blank">Chiedi informazioni</a>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERIA -->
+  <section id="galleria" style="background: var(--primary-light);">
+    <div class="container">
+      <h2 class="section-title fade-in">Il mio ambiente a Mondovì</h2>
+      <p class="section-subtitle fade-in">Uno spazio accogliente, rilassante e professionale dove prendersi cura di sé nel mio studio a Mondovì.</p>
+      <div class="gallery" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+        <img src="img/photo1.jpg" alt="Riflessologia plantare" loading="lazy" />
+        <img src="img/photo2.jpg" alt="Studio con cascata" loading="lazy" />
+        <img src="img/photo3.jpg" alt="Massaggio braccio" loading="lazy" />
+        <img src="img/photo4.jpg" alt="Massaggio schiena" loading="lazy" />
+        <img src="img/photo6.jpg" alt="Aurora accanto al lettino" loading="lazy" />
+        <img src="img/photo7.jpg" alt="Osteomassaggio professionale - Studio Aurora" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- RECENSIONI -->
+  <section id="recensioni">
+    <div class="container">
+      <h2 class="section-title fade-in">Cosa dicono i miei clienti</h2>
+      <p class="section-subtitle fade-in">Scopri le esperienze positive di chi ha già provato i miei trattamenti a Mondovì.</p>
+      <div class="reviews">
+        <div class="review-card fade-in">
+          <div class="stars">★★★★★</div>
+          <p><strong>Luca Cordere</strong></p>
+          <p>"Lo consiglio vivamente, ragazza molto professionale e massaggio efficace a chi dopo una giornata di lavoro e stressato... perché non dedicare un ora al beneficio della nostra salute????"</p>
+        </div>
+        <div class="review-card fade-in">
+          <div class="stars">★★★★★</div>
+          <p><strong>Maria Rosaria Amodio</strong></p>
+          <p>"Confermo! È fantastico!"</p>
+        </div>
+        <div class="review-card fade-in">
+          <div class="stars">★★★★★</div>
+          <p><strong>Giu Biba</strong></p>
+          <p>"Molto professionale e massaggio davvero ben fatto e rilassante."</p>
+        </div>
+        <div class="review-card fade-in">
+          <div class="stars">★★★★★</div>
+          <p><strong>Daniela Porta</strong></p>
+          <p>"Molto brava consigliata per un buon massaggio"</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- WIDGET RECENSIONI FACEBOOK -->
+  <section id="recensioni-facebook" style="background: var(--primary-light); padding: 60px 20px;">
+    <div class="container">
+      <h2 class="section-title fade-in">Le mie recensioni su Facebook</h2>
+      <p class="section-subtitle fade-in">Leggi le esperienze autentiche dei miei clienti direttamente dalla pagina Facebook ufficiale.</p>
+      
+      <!-- Elfsight Facebook Reviews Widget -->
+      <div style="max-width: 900px; margin: 0 auto;">
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-placeholder" style="text-align:center; padding: 30px; background: white; border-radius: 20px; box-shadow: 0 8px 30px rgba(0,0,0,0.08);">
+          <!-- Fallback: link diretto alla pagina Facebook -->
+          <div style="margin-bottom: 20px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="#1877F2" style="margin: 0 auto 15px; display:block;">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+            <h3 style="color: #1877F2; margin-bottom: 10px; font-family: 'Playfair Display', serif;">AuroraMassaggioSvedese</h3>
+            <p style="color: #666; margin-bottom: 20px;">Visita la mia pagina Facebook per leggere tutte le recensioni dei clienti.</p>
+            <a href="https://www.facebook.com/AuroraMassaggioSvedese" target="_blank" rel="noopener" 
+               style="display: inline-block; background: #1877F2; color: white; padding: 14px 28px; border-radius: 999px; font-weight: 600; font-size: 0.95rem; text-decoration: none; box-shadow: 0 6px 20px rgba(24,119,242,0.3); transition: 0.3s ease;"
+               onmouseover="this.style.transform='translateY(-2px)'; this.style.opacity='0.9'"
+               onmouseout="this.style.transform=''; this.style.opacity='1'">
+              📘 Leggi le recensioni su Facebook
+            </a>
+          </div>
+          <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 20px;">
+            <div style="background: #f0f7f3; border-radius: 12px; padding: 15px 20px; text-align: center;">
+              <div style="font-size: 1.8rem; font-weight: 700; color: #4f6b5a;">5.0</div>
+              <div style="color: #c9a96a; font-size: 1.1rem;">★★★★★</div>
+              <div style="color: #666; font-size: 0.85rem; margin-top: 4px;">Media recensioni</div>
+            </div>
+            <div style="background: #f0f7f3; border-radius: 12px; padding: 15px 20px; text-align: center;">
+              <div style="font-size: 1.8rem; font-weight: 700; color: #4f6b5a;">100%</div>
+              <div style="color: #666; font-size: 0.85rem; margin-top: 4px;">Clienti soddisfatti</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEO SECTION -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Massaggi professionali a Mondovì</h2>
+      <p>Sono Aurora, massaggiatrice professionista a Mondovì. Offro osteomassaggio, massaggio rilassante, decontratturante, svedese e riflessologia plantare in un ambiente accogliente e riservato nel mio studio a Mondovì.</p>
+      <p>Se cerchi un massaggio a Mondovì per alleviare dolori muscolari, ridurre lo stress o migliorare il tuo benessere, il mio studio è la soluzione ideale. Ricevo su appuntamento e sono a disposizione per aiutarti a scegliere il trattamento più adatto alle tue esigenze.</p>
+    </div>
+  </section>
+
+  <!-- CONTATTI -->
+  <section id="contatti">
+    <div class="container contact-grid">
+      <div class="contact-card">
+        <h2 class="section-title" style="text-align:left; margin-top:0;">Contatti</h2>
+        <p>📍 <strong>Indirizzo:</strong> Via Cuneo 50, Mondovì (CN)</p>
+        <p>📞 <strong>Telefono:</strong> 3349762880</p>
+        <p>📧 <strong>Email:</strong> <a href="mailto:lolagabry65@gmail.com" style="color:#4f6b5a; font-weight:bold;">lolagabry65@gmail.com</a></p>
+        <a class="btn" href="https://wa.me/393349762880?text=Buongiorno,%20vorrei%20prenotare%20un%20massaggio" target="_blank">Prenota su WhatsApp</a>
+      </div>
+
+      <div class="info-box">
+        <h3 style="color:#4f6b5a; margin-top:0;">Orari di apertura</h3>
+        <p><strong>Lunedì - Venerdì:</strong> 9:00 – 19:00</p>
+        <p><strong>Sabato:</strong> 9:00 – 13:00</p>
+        <p><strong>Domenica:</strong> Chiuso</p>
+        <p><em>Si riceve su appuntamento</em></p>
+      </div>
+    </div>
+
+    <div class="container" style="margin-top:30px;">
+      <iframe src="https://www.google.com/maps?q=Via+Cuneo+50+Mondovi&output=embed" width="100%" height="300" style="border:0; border-radius:15px;" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <footer style="display: flex; align-items: center; justify-content: center; gap: 15px;">
+    <img src="img/aurora-logo.png" alt="Aurora Massaggio Svedese" style="width: 35px; height: 35px;" />
+    <p>© 2026 AuroraMassaggioSvedese — Tutti i diritti riservati</p>
+  </footer>
+
+    <a href="https://wa.me/393349762880?text=Buongiorno,%20vorrei%20prenotare%20un%20massaggio" target="_blank" class="whatsapp-btn" aria-label="Contatta AuroraMassaggioSvedese su WhatsApp">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+  </a>
+
+  <script>
+    const frasiHero = [
+      "Dolori, stress e tensioni? Qui inizi il tuo percorso di benessere",
+      "Sciogli le tensioni e ritrova leggerezza nel corpo",
+      "Un momento solo per te, in un ambiente rilassante e armonioso",
+      "Trattamenti personalizzati per ritrovare equilibrio e serenità"
+    ];
+
+    let indiceFrase = 0;
+    const heroText = document.getElementById("heroText");
+
+    setInterval(() => {
+      indiceFrase = (indiceFrase + 1) % frasiHero.length;
+      heroText.classList.remove("fade-text");
+      void heroText.offsetWidth;
+      heroText.textContent = frasiHero[indiceFrase];
+      heroText.classList.add("fade-text");
+    }, 3500);
+
+    // Fade-in animation on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-in').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
